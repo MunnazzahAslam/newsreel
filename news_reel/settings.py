@@ -101,7 +101,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'news_reel.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
