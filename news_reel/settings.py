@@ -28,14 +28,13 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = int(os.environ.get('DEBUG', 1))
 
-ALLOWED_HOSTS = ['newsreel-fe-master.herokuapp.com','newsreelui.herokuapp.com', 'newsreel.softplease.com', 'www.newsplatform.club', 'newsplatform.club']
+ALLOWED_HOSTS = ['newsreelui.herokuapp.com', 'newsreel.softplease.com', 'www.newsplatform.club', 'newsplatform.club']
 
 CORS_ALLOWED_ORIGINS = [
     'https://newsreelui.herokuapp.com',
     'https://newsreel.softplease.com',
     'https://newsplatform.club',
     'https://www.newsplatform.club',
-    'https://newsreel-fe-master.herokuapp.com'
 ]
 
 # Application definition
@@ -100,6 +99,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'news_reel.wsgi.application'
+
+
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
@@ -113,6 +114,7 @@ DATABASES = {
         'PORT': '',
     }
 }
+
 
 AUTH_USER_MODEL = 'users.User'
 
