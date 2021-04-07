@@ -50,14 +50,7 @@ schema_view = get_schema_view(
 urlpatterns += [
     path("api/docs/", schema_view.with_ui("swagger", cache_timeout=0), name="api_docs")
 ]
-def empty_view(request):
-    return HttpResponse("Empty View")
 
-
-urlpatterns = [
-    ... your code
-    path('', empty_view, name='empty_view'),
-]
 
 admin.site.site_header = "News Reel"
 admin.site.site_title = "News Reel Admin Portal"
